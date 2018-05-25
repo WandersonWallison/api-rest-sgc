@@ -9,8 +9,19 @@ module.exports = {
 
   attributes: {
 
-    email: { type: 'string', unique: true, allowNull: false },
-    nome: { type: 'string', allowNull: false },
+    email: {
+      type: 'string',
+      required: true,
+      unique: true,
+      isEmail: true,
+      maxLength: 200
+    },
+    nome: {
+      type: 'string',
+      required: true,
+      description: 'Full representation of the user\'s name',
+      maxLength: 120
+    },
     endereco: { type: 'string', required: true },
     bairro: { type: 'string', required: true },
     cidade: { type: 'string', required: true },
