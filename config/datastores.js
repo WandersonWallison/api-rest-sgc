@@ -47,6 +47,7 @@ module.exports.datastores = {
     * 3. Then pass it in, along with a connection URL.                         *
     *    (See https://sailsjs.com/config/datastores for help.)                 *
     *                                                                          *
+<<<<<<< HEAD
     **************************************************************************/
    adapter: require('sails-mysql'),
    url: 'mysql://root:123@localhost:3306/api_rest_sgc'
