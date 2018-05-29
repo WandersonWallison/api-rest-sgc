@@ -19,18 +19,47 @@ module.exports = {
     nome: {
       type: 'string',
       required: true,
-      description: 'Full representation of the user\'s name',
       maxLength: 120
     },
-    endereco: { type: 'string', required: true },
-    bairro: { type: 'string', required: true },
-    cidade: { type: 'string', required: true },
-    telefone: { type: 'string', allowNull: true, defaultsTo: '11-22222-3333' },
-    data_nascimento: { type: 'number', required: true },
-    cpf: { type: 'string', required: true },
-    atividade: { type: 'string', required: true },
-    escolaridade: { type: 'string', required: true },
-    ativo: { type: 'boolean', defaultsTo: true }
+    endereco: {
+      type: 'string',
+      required: true
+    },
+    bairro: {
+      type: 'string',
+      required: true
+    },
+    cidade: {
+      type: 'string',
+      required: true
+    },
+    telefone: {
+      type: 'string',
+      allowNull: true,
+      defaultsTo: '11-22222-3333'
+    },
+    data_nascimento: {
+      type: 'number',
+      required: true
+    },
+    cpf: {
+      type: 'string',
+      required: true
+    },
+    atividade: {
+      type: 'string',
+      required: true
+    },
+    escolaridade: {
+      type: 'string',
+      required: true
+    },
+    ativo: {
+      type: 'boolean',
+      defaultsTo: true
+    },
+
+
 
 
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗

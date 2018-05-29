@@ -1,5 +1,5 @@
 /**
- * Cliente.js
+ * Agente.js
  *
  * @description :: A model definition.  Represents a database table/collection/etc.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -24,15 +24,12 @@ module.exports = {
     },
     endereco: {
       type: 'string',
-      required: true
     },
     bairro: {
       type: 'string',
-      required: true
     },
     cidade: {
       type: 'string',
-      required: true
     },
     telefone: {
       type: 'string',
@@ -41,19 +38,15 @@ module.exports = {
     },
     data_nascimento: {
       type: 'number',
-      required: true
     },
     cpf: {
       type: 'string',
-      required: true
     },
     atividade: {
       type: 'string',
-      required: true
     },
     escolaridade: {
       type: 'string',
-      required: true
     },
     ativo: {
       type: 'boolean',
@@ -63,4 +56,3 @@ module.exports = {
   },
 
 };
-

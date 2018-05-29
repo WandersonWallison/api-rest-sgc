@@ -22,11 +22,8 @@ module.exports = {
     tempo: {
       type: 'number',
       required: true
-    },
-    proprietario: {
-      model: 'cliente',
-      unique: true
     }
+
   },
 
 };

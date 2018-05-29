@@ -9,13 +9,36 @@ module.exports = {
 
   attributes: {
 
-    dia: { type: 'number', required: true },
-    hora_inicial: { type: 'number', required: true },
-    hora_final: { type: 'number', required: true },
-    proprietario: {
-      model: 'cliente',
-      unique: true
+    dia: {
+      type: 'number',
+      required: true
+    },
+    hora_inicial: {
+      type: 'number',
+      required: true
+    },
+    hora_final: {
+      type: 'number',
+      required: true
+    },
+    // associação com tabela leads *um p um
+    leads: {
+      model: 'leads',
+      required: true
+    },
+
+    //associação com a tabela servico *um p um
+    servico: {
+      model: 'servico',
+      required: true
+    },
+
+    //associação com a tabela agente
+    agente: {
+      model: 'agente',
+      required: true
     }
+
   },
 
 };
